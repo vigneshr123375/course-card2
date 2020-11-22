@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    font-family: 'Poppins',sans-serif;
+}
+
+.grid {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    align-items: stretch;
+    
+    }
+  
+  .grid  article {
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3); 
+    border-radius: 3px;
+    text-align: center;
+    width: 300px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    background: #0E2431;
+    
+   
+  }
+  
+  .grid  article:hover{
+    transition: transform .1s ease-out;
+    transform: translateY(5px);
+    box-shadow: 0 15px 15px rgba(0,0,0,0.6);
+  }
+  
+  .grid  article img {
+    width: 100%;
+    border-radius: 5px;
+    transition: 1s;
+    
+  }
+  .grid  article img:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+  }
+  .heading{
+      text-align: center;
+      margin-right: auto;
+      color:#0E2431 ;
+  }
+  .heading span{
+    background: -webkit-linear-gradient(#3b87bd, #2d71a2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+  }
+  
+  
+  .text {
+      color: #fff;
+     padding: 0 20px 20px;
+      }
+  
+  .text  h3{
+    text-transform: uppercase;
+  }
+  .text p{
+      color: #898989;
+  }
+  
+  .text  button {
+    background: -webkit-linear-gradient(#3b87bd, #2d71a2);
+    border-radius: 3px;
+    border: 0;
+    outline: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    transition: all 1s ease-in-out;
+  }
+  .text  button:hover{
+      cursor: pointer;
+      background:#3b87bd;
+     
+  }
+  
+ /* media queries */
+
+  @media (max-width: 1300px){
+    .grid{
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 90px;
+    }
+  }
+  @media (max-width: 1030px){
+    .grid{
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 10px;
+    }
+  }
+
+  
+  
+  @media (max-width: 768px){
+    .grid{
+      grid-template-columns: repeat(2, 1fr);
+      margin: 55px;
+    }
+  }
+  @media (max-width: 550px){
+    .grid{
+      grid-template-columns: repeat(1, 1fr);
+      margin-left: 100px;
+    }}
+ 
+  
+  @media (max-width: 500px){
+    .grid{
+      grid-template-columns: repeat(1, 1fr);
+      margin: 45px;
+    }
+  
+    .grid > article{
+      text-align: center;
+    }
+  }
+  @media (max-width:375px){
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px;
+      }
+    
+     
+  }
+  @media (max-width:330px){
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+      }
+    
+     
+  }
+  
